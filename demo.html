@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LightBox animation</title>
+        <style>
+           #lightbox {
+               width: 0;
+               height: 0;
+               position: fixed;
+               left: 0;
+               top: 0;
+               overflow: hidden;
+               transition: all 0.3s ease-in;
+           }
+           #lightbox:target {
+               width: 30%;
+               height: 30%;
+               left: 30%;
+               top: 40%;
+               background-color: greenyellow;
+           }
+        </style>
+    </head>
+    <body>
+        <a href="#lightbox">LightBox</a>
+        <div id="lightbox">
+            <a href="#">X</a>
+            <p>This is a lightbox animation.</p>
+        </div>
+    </body>
+</html>
